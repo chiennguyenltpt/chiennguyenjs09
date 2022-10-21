@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body onload="helloUser(),resetLogout()">
+    <header >
+        <div class="nav">
+            <div class="logo">
+                <img src="./image/logo.png" alt="">
+            </div>
+                <ul>
+                    <li><button onclick="Home()" class="button" > HOME</button></li>
+                    <li><button class="button">ABOUT ME</button></li>
+                    <li><button onclick="moveCollection()" class="button" >MY COLLECTION</button></li>
+                    <li><button onclick="contactMe()" class="button">CONTACT ME</button></li>
+                    <li><button class="button"  onclick="logOut()">Log out</button></li>
+                </ul>
+
+            
+
+
+                <div class="user" >
+                    <i onclick="showLogoutAndAccount()" class="fa-solid fa-user-large"></i>
+                    <label >Hello !!!</label> <br>
+                    <h3>this is label</h3><br>
+                    
+                </div>
+            <!-- khoi thanh doi pass word -->
+                <div class="changePassword">
+                    <h3 onclick="showChangePassword()">Change Password</h3>
+                    <h3 onclick=" showInfoUser()">Your Account</h3>
+                </div>
+
+
+            <!-- Thay doi pass word -->
+                <div class="makeNewPassword">
+                    <h2>CHANGE PASSWORD</h2>
+                    <input type="text" placeholder="Old Password"><br>
+                    <small>error Password</small><br>
+                    <input type="text" placeholder="New Password"><br>
+                    <small>error Password</small><br>
+                    <input type=" text" placeholder="Confirm Password"><br>
+                    <small>error Password</small>
+                    <div class="bnt-savepassword">
+                        <button onclick="changePassword()">Save</button>
+                        <button onclick = "cancelChangePassword()">Cancel</button><br>
+                        <p>  change password sucsecc !!</p>
+                    </div>
+                </div>
+
+                <!-- show Account -->
+                <div id="showAccount">
+                    <h2>INFORMATION USER</h2>
+                    <pre>
+                        User name : <span></span>
+                        
+                        Email     : <span></span> 
+                        
+                        Birthday  : <span></span> 
+                        
+                        Phone     : <span></span> 
+
+                        Address   : <span></span>
+                    </pre>
+                    <button onclick="changeUpdate ()">update</button>
+                    <button onclick="cancelShowImfor()">cancel</button>
+                    
+
+                </div>
+                    
+                    <div class="update">
+                        <input type="text" placeholder="Your Birthday yyyy/mm/dd"><br>
+                        <input type="text" placeholder="Your phone"><br>
+                        <input type="text" placeholder="address"><br>
+                        <button onclick="update()">Save</button>
+                        <button class="cancelUpdate" onclick="cancelUpdate()">cancel</button>
+
+                        
+                    </div>
+            </div>
+        </div>
+
+        <!--  -->
+        <div class="baner">
+            <div class="title">95Hz Dev</div>
+            <img  id ='baner' src="./image/csgo1.png" alt="">
+            
+        </div>
+
+    </header>
+
+    
+
+
+        
+    </div>
+    <script src="./home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mycollection.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body onload="resetLogout(), showName(),newproduct() ">
+    <div class="container">
+        <img src="../image/baner1.jpeg" alt="">
+        <div class="nav">
+            <div class="logo">
+                <img src="./image/logo.png" alt="">
+            </div>
+            <ul>
+                <li><button class="button" onclick="moveHome()"> HOME</button></li>
+                <li><button class="button">ABOUT ME</button></li>
+                <li><button class="button" onclick="moveMyCollection()">MY COLLECTION</button></li>
+                <li><button class="button" onclick="moveContacMe()">CONTACT ME</button></li>
+                <li><i onclick="showCard() , selectProduct()" class="fa-solid fa-cart-arrow-down"></i></li>
+            </ul>
+            <div class="nav-newsproduct">
+                <button onclick="newproduct()">new product</button>
+                <button onclick="trendProduct ()">trend product</button>
+                <button onclick="saleProduct()">sale product</button>
+            </div>
+        </div>
+        <div class="user">
+            <i class="fa-solid fa-user-large"></i>
+            <h3>this is label</h3><br>
+        </div>
+
+
+
+
+    </div>
+
+    </div>
+    <!-- wrapper1 -->
+    <div class="detail-product">
+
+        <div class="slide-text">
+            <input id="search" onclick="" class="search" type="search" placeholder="search">
+        </div>
+            
+        <!-- TT SP -->
+
+        <div class="product">
+            <div  class="show-product" id="show-product">
+
+
+            </div>
+
+            <!-- .descrise-product -->
+            <div class="descrise-product">
+                <img id="descrise-product" src="./image/anh14.jpeg" alt=""><br>
+                <div class="detail">
+                    Name : <span>Ak47</span>
+                    Dame : <span>100%</span>
+                    Clid : <span>30%</span>
+                </div>
+                <div class="price">
+                    <span>90</span>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <div class="bnt-card">
+                        <button onclick="buyNow()">BUY NOW</button>
+                        <button onclick="clickAddToCard()" >ADD TO CARD</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- Buy Now -->
+        <div class="buy-now">
+            <div  class="buy-product" id="buy-product" >
+               
+            </div>
+        </div>
+        <!-- thong bao them thanh conng vao gio hang -->
+        <div class="notice-addcard">
+            <h3>Bạn đã thêm thành công vào giỏ hàng</h3>
+        </div>
+
+
+
+        <!-- Gio hang -->
+        <div class="shopping">
+            <div  class="notice-product">
+                <h2>THÔNG TIN SẢN PHẨM ĐÃ CHỌN</h2>
+            </div>
+            <div class="notice-checkout-Success">
+               <p> BẠN ĐÃ THANH TOÁN THÀNH CÔNG</p>
+            </div>
+            <button onclick="outCard()" class="card" >CANCEL</button>
+            <!-- cac san pham da chon -->
+            <div class="show-product-chocie">
+                <div class="branch">
+                    <h2>sản phẩm</h2>
+                    <h2>Tên</h2>
+                    <h2>Total</h2>
+                    <h2>Thành tiền</h2>
+                </div>
+
+                <div class="product-choice">
+                    <div class="detail-choice">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="./mycollection.js"></script>
+
+
+</body>
+
+</html>
