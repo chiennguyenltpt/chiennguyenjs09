@@ -77,7 +77,7 @@ function saleProduct() {
         </div>`
     }
     layOut.innerHTML = layOutSum
-}
+}   
 // show product
 function showDetail(id) {
     let imgname = document.getElementsByClassName("gun");
